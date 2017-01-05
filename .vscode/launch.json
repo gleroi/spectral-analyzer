@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/rs4000/target/debug/deps/rs4000-4196e299c7d29b46.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": false
+        },
+        {
+            "name": "C++ Attach (Windows)",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}
