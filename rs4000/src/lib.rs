@@ -6,7 +6,7 @@ const PICO_OPERATION_FAILED : PicoStatus = 0x06;
 const PICO_INVALID_HANDLE : PicoStatus = 0x0C;
 
 #[link(name = "ps4000")]
-extern "system" {
+extern "C" {
     fn ps4000OpenUnit(handle: *mut i16) -> PicoStatus;
     fn ps4000CloseUnit(handle: i16) -> PicoStatus;   
 }
